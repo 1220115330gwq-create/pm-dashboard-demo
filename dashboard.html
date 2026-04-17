@@ -119,46 +119,62 @@
       </div>
     </section>
 
-    <section id="risks" class="panel">
+    <section id="risks" class="panel risk-panel">
       <div class="section-head">
         <h2>Risk Register</h2>
       </div>
-      <div class="table-wrap">
-        <table class="risk-table">
+      <div class="table-wrap risk-table-shell">
+        <table class="risk-table risk-register-table">
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Risk</th>
+              <th>Risk ID</th>
+              <th>Description</th>
               <th>Probability</th>
               <th>Impact</th>
-              <th>Status</th>
               <th>Owner</th>
+              <th>Status</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>R-01</td>
-              <td>API vendor latency increases</td>
-              <td>Medium</td>
-              <td>High</td>
-              <td>Mitigating</td>
+              <td>R-001</td>
+              <td>Third-party reporting API latency may delay release analytics.</td>
+              <td><span class="risk-label level-medium">Medium</span></td>
+              <td><span class="risk-label level-high">High</span></td>
               <td>AM</td>
+              <td><span class="status-label status-open">Open</span></td>
             </tr>
             <tr>
-              <td>R-02</td>
-              <td>Scope change before release</td>
-              <td>High</td>
-              <td>Medium</td>
-              <td>Open</td>
+              <td>R-002</td>
+              <td>Late feature requests from stakeholders could increase sprint load.</td>
+              <td><span class="risk-label level-high">High</span></td>
+              <td><span class="risk-label level-medium">Medium</span></td>
               <td>PM</td>
+              <td><span class="status-label status-mitigating">Mitigating</span></td>
             </tr>
             <tr>
-              <td>R-03</td>
-              <td>Test environment instability</td>
-              <td>Low</td>
-              <td>Medium</td>
-              <td>Monitoring</td>
+              <td>R-003</td>
+              <td>Test environment instability may reduce QA cycle efficiency.</td>
+              <td><span class="risk-label level-low">Low</span></td>
+              <td><span class="risk-label level-medium">Medium</span></td>
               <td>JD</td>
+              <td><span class="status-label status-monitoring">Monitoring</span></td>
+            </tr>
+            <tr>
+              <td>R-004</td>
+              <td>Key engineer availability risk during final integration window.</td>
+              <td><span class="risk-label level-medium">Medium</span></td>
+              <td><span class="risk-label level-high">High</span></td>
+              <td>DC</td>
+              <td><span class="status-label status-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>R-005</td>
+              <td>Compliance approval turnaround may push go-live decision date.</td>
+              <td><span class="risk-label level-low">Low</span></td>
+              <td><span class="risk-label level-high">High</span></td>
+              <td>MR</td>
+              <td><span class="status-label status-mitigating">Mitigating</span></td>
             </tr>
           </tbody>
         </table>
